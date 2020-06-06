@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1591474098 source:/home/pi/Documents/Projects/BoatController/GPS_Decoder/main.cpp
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<TinyGPS.h>
+	<wiringPi.h>
+	<wiringSerial.h>
+
+1591470954 /home/pi/Documents/Projects/BoatController/GPS_Decoder/include/GPS.h
+	<wiringPi.h>
+	<wiringSerial.h>
+	<stdio.h>
+	<string.h>
+	<errno.h>
+
+1591470954 source:/home/pi/Documents/Projects/BoatController/GPS_Decoder/src/GPS.cpp
+	"GPS.h"
+
+1591475521 /home/pi/Documents/Projects/BoatController/GPS_Decoder/include/TinyGPS.h
+	<limits.h>
+	<ctime>
+	<wiringPi.h>
+	<math.h>
+
+1591474098 source:/home/pi/Projects/GPS_Decoder/main.cpp
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<TinyGPS.h>
+	<wiringPi.h>
+	<wiringSerial.h>
+
+1591475521 /home/pi/Projects/GPS_Decoder/include/TinyGPS.h
+	<limits.h>
+	<ctime>
+	<wiringPi.h>
+	<math.h>
+
+1591475581 source:/home/pi/Projects/GPS_Decoder/TinyGPS.cpp
+	"TinyGPS.h"
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+

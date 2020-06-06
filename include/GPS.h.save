@@ -1,0 +1,17 @@
+#ifndef GPS_H
+#define GPS_H
+
+
+class GPS
+{
+    public:
+        GPS();
+        virtual ~GPS();
+        struct data{float lat;float lon;}
+
+    protected:
+
+    private:
+};
+
+#endif // GPS_H
