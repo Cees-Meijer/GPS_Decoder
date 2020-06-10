@@ -27,15 +27,27 @@ int main ()
   }
 
   nextTime = millis () + 300 ;
+  bool firstUpdate = false;
 
-  for (count = 0 ; count < 256 ; )
+  while(true)
   {
 
     while (serialDataAvail (fd))
     {
       char cc = serialGetchar (fd);
-      printf ("%c", cc) ;
+
       gps->encode(cc);
+      if(!firstUpdate)
+      {
+       firstUpdate=gps->location.isUpdated();
+       printf("%c", cc) ;
+      }
+      else{
+        if(gps->location.isUpdated()){
+          printf("LAT=%f, LON=%f, Age:%d, Heading:%f, Speed:%f\r\n",gps->location.lat(),gps->location.lng(),gps->location.age(),);
+          }
+       }
+
       fflush (stdout) ;
     }
   }
