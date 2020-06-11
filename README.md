@@ -25,4 +25,4 @@ Then query it for the desired information:
             gps->location.age(),gps->course.deg(),gps->speed.mps());
 ```
 
-I used CODE::BLOCKS to edit this project, hence the .save and .depends files.
+I used CODE::BLOCKS to edit this project, hence the .save and .depends files. (And, until I finally learn how to use GIT, there might be some othar files included that u don't need...)
